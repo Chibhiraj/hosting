@@ -1,0 +1,97 @@
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+<style>
+    body{
+    background-image: url('https://media.istockphoto.com/id/1353553203/photo/forest-wooden-table-background-summer-sunny-meadow-with-green-grass-forest-trees-background.jpg?b=1&s=170667a&w=0&k=20&c=-jvR1WDwcloLXRgRTGeyG3frvrhPIbegdemeL6vY2Pk='); background-repeat: no-repeat; background-size: cover;
+}
+form {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmQQeDLd1y-6rtPyt446mU0KuffMGH9I6nC9we27tkRTDJ0tI&s');background-repeat: no-repeat;background-size: cover;
+    max-width: 600px;
+    margin: auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  select {
+    height: 40px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  button[type="submit"],
+  button[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover,
+  button[type="reset"]:hover {
+    background-color: #3e8e41;
+    
+  }
+  
+</style>
+<body>
+<h1 style="text-align: center;">REGISTRATION FORM</h1>
+
+<form onsubmit="return validateForm()">
+    <label for="name">NAME:</label>
+    <input type="text" id="name" name="name" required>
+  
+    <label for="email">E-MAIL:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="password">PASSWORD:</label>
+    <input type="password" id="password" name="password" minlength="8" required>
+  
+    <label for="gender">GENDER:</label>
+    <select id="gender" name="gender" required>
+      <option value=""></option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+  
+    <label for="country">COUNTRY:</label>
+    <select id="country" name="country" required>
+      <option value=""></option>
+      <option value="usa">USA</option>
+      <option value="canada">INDIA</option>
+      <option value="uk">CHINA</option>
+    </select>
+  
+    <label for="pincode">PINCODE:</label>
+    <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required>
+  
+    <label for="language">LANGUAGE:</label>
+    <input type="checkbox" id="english" name="language" value="english"> English
+    <input type="checkbox" id="french" name="language" value="french"> French
+    <input type="checkbox" id="spanish" name="language" value="spanish"> Spanish<br><br><br>
+  <center>
+    <button type="submit">Submit</button><br><br>
+</center>
+</form>
+</body>
